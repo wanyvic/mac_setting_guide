@@ -6,22 +6,23 @@
 
 - ***自动化***
 
-  自动化可以大大简化操作，提高效率。
+  自动化可以大大简化操作，提高效率。举个例子：浏览器搜索内容，需要执行1）鼠标选择文字，2）拷贝内容到剪贴板，3）打开浏览器或切换到浏览器，4）粘贴拷贝的内容，5）按下回车键，总共5步操作。而利用[PopClip](#PopClip)，只需要1）鼠标选择文字，2）鼠标双击文字，3）在弹出的浮动窗点击搜索图标，总共3步操作即可完成。
 
-  举个例子：浏览器搜索内容，需要执行1)鼠标选择文字，2)拷贝内容到剪贴板，3)打开浏览器或切换到浏览器，4)粘贴拷贝的内容，5)按下回车键，总共5步操作。而利用[PopClip](#PopClip)，只需要1)鼠标选择文字，2)鼠标双击文字，3)在弹出的浮动窗点击搜索图标，总共3步操作即可完成。
+- ***一致性***
 
-- ***一致***
   我经常会遇到使用不同的开发工具或编辑器，快捷键和操作、命令不同的问题。我强烈建议，至少在一个团队中，大家尽量使用相同的开发工具、相同的编辑器、相同的快捷键、相同的命令等环境。
 
-- ***够用***
+- ***够用就好***
   够用就好，如果系统本身已经满足了我的需求，我不会再使用第三方工具。
 
-- ***效率***
+- ***高效率***
   效率，一切都是为了效率。
 
 - ***强烈推荐***
+
   我个人强烈推荐以下神器级的工具：[Homebrew](#homebrew)、[Homebrew Cask](#homebrew-cask)、[iTerm2](#iterm2)、[Alfred](#alfred)、
 [PopClip](#popclip)、[Path Finder](#path-finder)、[ShadowsocksX](#shadowsocksx)、[JetBrains全家桶](#jetbrains全家桶)、[Visual Studio Code](#visual-studio-code)、[Dash](#dash)、[Charles](#charles)、[Swagger](#swagger)、[Regex101](#regex101)等。
+
 本文对于第三方应用如何安装和使用只有最简单的介绍，具体还请参考官方网站和相关文档。另外，欢迎大家通过码云的`Issues`或者`Pull Requests`方式来分享你的经验。期待你的反馈。
 
 ## 目录
@@ -112,6 +113,7 @@
 Spotlight的快捷键是`Cmd+Space`，切换输入法的快捷键是`Ctrl+Space`。这个设置有以下的问题：
 
 - 由于我们推荐使用[Afred](#Afred)，其功能与Spotlight类似但功能更加强大，建议关闭Spotlight的快捷键，同时将[Afred](#Afred)的快捷键设置为`Cmd+Space`。设置方法：选择`系统偏好设置` -> `键盘` -> `快捷键` -> `聚集` -> 取消选中`显示"聚焦"搜索`。
+
 - JetBrains的IDE，比如IntelliJ IDEA、WebStorm等都使用`Ctrl+Space`作为自动完成这个最常用功能的快捷键。我不建议更改IDE的快捷键，而建议更改切换输入法的快捷键为`Option+Space`。设置方法：选择`系统偏好设置` -> `键盘` -> `快捷键` -> `输入法` -> 点击`选择上一个输入法` -> 将快捷键改为`Option+Space`。
 
 ### 其他快捷键
@@ -120,7 +122,7 @@ Spotlight的快捷键是`Cmd+Space`，切换输入法的快捷键是`Ctrl+Space`
 
 - [Mac keyboard shortcts](https://support.apple.com/kb/HT201236)
 
-  苹果官方文档。当你在写代码，怎么通过快捷键让光标转移到行首、行尾、向上翻页或者将光标移左移一个词？都在这篇文档里。
+  苹果官方文档。当你在写代码，怎么通过快捷键让光标转移到行首、行尾、向上翻页或者将光标移左移一个词都在这篇文档里。
 
 - [Mac keyboard shortcuts for accessibility features](https://support.apple.com/kb/HT204434)
 
@@ -144,7 +146,7 @@ say hello
 brew update && brew upgrade && brew cleanup ; say mission complete
 ```
 
-通过命令行来听取发音还是有点麻烦。其实我们几乎可以在任何地方选中单词，然后使用快捷键`Option+ESC`发音。设置方法：选择`系统偏好设置` -> `辅助功能` -> `语音` -> 选中`按下按键时朗读所选文本`。另外，利用我们推荐的[PopClip](#PopClip)的`Say`插件，可以全部通过鼠标操作来实现选择文字并读出发音的功能。
+通过命令行来听取发音还是有点麻烦。其实我们几乎可以在任何地方选中单词，然后使用快捷键`Option+Esc`发音。设置方法：选择`系统偏好设置` -> `辅助功能` -> `语音` -> 选中`按下按键时朗读所选文本`。另外，利用我们推荐的[PopClip](#PopClip)的`Say`插件，可以全部通过鼠标操作来实现选择文字并读出发音的功能。
 
 ### 词典和翻译
 
@@ -154,7 +156,7 @@ Mac自带了词典应用（Dictionary），你几乎可以在任何应用中通�
 
 ### Dock位置
 
-默认Dock在屏幕下方，我们的屏幕一般是16:10，Dock在屏幕下方的话会占据本来就不大的垂直空间。建议把Dock放到左边或者右边。设置方法：选择`系统偏好设置` -> `程序坞` -> `位于屏幕上的位置` -> 选中`z左边`或`右边`。
+默认Dock在屏幕下方，我们的屏幕一般是16:10，Dock在屏幕下方的话会占据本来就不大的垂直空间。建议把Dock放到左边或者右边。设置方法：选择`系统偏好设置` -> `程序坞` -> `位于屏幕上的位置` -> 选中`左边`或`右边`。
 
 ### 删除Dock上不常用的图标
 
@@ -227,13 +229,17 @@ PS：安装 brew 的时候会自动下载和安装 Apple 的 Command Line Tools�
 
   - 如果只升级特定软件，可以执行：`brew --cleanup upgrade xxxx`。
 
+- 卸载已安装软件，可以执行以下的命令：
+
+  ```sh
+  brew uninstall xxxx
+  ```
+
 - 具体命令行参数和使用教程请大家访问官网或自行百度。
 
 ### Homebrew Cask
 
-[Homebrew Cask](https://caskroom.github.io)是Mac上使用brew命令行安装Mac应用的工具。比如你可以这样安装Chrome：`brew cask install google-chrome`，还有Evernote、Skype、Sublime Text、VirtualBox等都可以用brew-cask安装。
-
-几乎所有常用的应用都可以通过brew-cask安装，而且是从应用的官网上下载，所以你要安装新的应用时，建议用brew-cask安装。如果你不知道应用在brew-cask中的ID，可以先用`brew cask search`命令搜索。brew-cask是社区驱动的，如果你发现brew-cask上的应用不是最新版本，或者缺少你某个应用，你可以自己提交pull request。
+[Homebrew Cask](https://caskroom.github.io)是Mac上使用brew命令行安装Mac应用的工具。几乎所有常用的应用都可以通过brew-cask安装，而且是从应用的官网上下载，所以你要安装新的应用时，建议用brew-cask安装。如果你不知道应用在brew-cask中的ID，可以先用`brew cask search`命令搜索。brew-cask是社区驱动的，如果你发现brew-cask上的应用不是最新版本，或者缺少你某个应用，你可以自己提交pull request。
 
 ***安装方法：***
 
@@ -273,6 +279,12 @@ brew tap caskroom/cask
   brew cask reinstall xxxx
   ```
 
+- 卸载已安装软件，可以执行以下的命令：
+
+  ```sh
+  brew cask uninstall xxxx
+  ```
+
 - 删除已安装软件的安装包，可以执行以下的命令：
 
   ```sh
@@ -289,15 +301,17 @@ brew tap caskroom/cask
 brew cask install iterm2
 ```
 
-在终端里，除了可以用`Ctrl+E`等快捷键（详见[其他快捷键](#其他快捷键)）之外，还可以使用`Option+B`、`Option+F`等快捷键（具体可以参考[这里](http://ss64.com/bash/syntax-keyboard.html)）。前提是这样设置一下：
+***使用说明：***
 
-选择`Iterm`菜单 -> `Preferences` -> `Profiles`，选择你在使用的 Profile（默认是`Default`），在`Keys`标签页中把`Left option (⌥) key acts as`和`Right option (⌥) key acts as`都设置成`+ESC`。
+- 在iTerm2中，除了可以用`Ctrl+E`等快捷键（详见[其他快捷键](#其他快捷键)）之外，还可以使用`Option+B`、`Option+F`等快捷键（具体可以参考[这里](http://ss64.com/bash/syntax-keyboard.html)）。前提是这样设置一下：
 
-在打开新的窗口/标签页的时候，默认情况下新窗口总是HOME目录，还需要我每次敲命令才能进入工作目录。如果想要这个新窗口在打开的时候就自动进入工作目录，需要如下设置：
+  选择`Iterm`菜单 -> `Preferences` -> `Profiles`，选择你在使用的 Profile（默认是`Default`），在`Keys`标签页中把`Left option (⌥) key acts as`和`Right option (⌥) key acts as`都设置成`+ESC`。
 
-选择`Iterm`菜单 -> `Preferences` -> `Profiles`，选择你在使用的 Profile（默认是Default），在`General`标签页中的`Working Directory`部分中选择`Reuse previous seesion's directory`。
+- 在打开新的窗口/标签页的时候，默认情况下新窗口总是HOME目录，还需要我每次敲命令才能进入工作目录。如果想要这个新窗口在打开的时候就自动进入工作目录，需要如下设置：
 
-在iTerm2中双击会自动选中对应的词，三击会选中对应的整行。选中的内容会自动进入剪贴板，不需要再按`Cmd+C`复制。
+  选择`Iterm`菜单 -> `Preferences` -> `Profiles`，选择你在使用的 Profile（默认是Default），在`General`标签页中的`Working Directory`部分中选择`Reuse previous seesion's directory`。
+
+- 在iTerm2中双击会自动选中对应的词，三击会选中对应的整行。选中的内容会自动进入剪贴板，不需要再按`Cmd+C`复制。
 
 ### Zsh和Oh My Zsh
 
@@ -582,6 +596,8 @@ brew cask install cheatsheet
 brew install stow
 ```
 
+***使用说明：***
+
 安装了stow之后，我们可以开始symlink自己的dotfiles了。完整使用stow和dotfiles的流程可以参考我的dotfiles<https://gitee.com/gebing/dotfiles>。
 
 当你的dotfiles都妥妥的symlink到`~/dotfiles`后，push到github上就再也不怕换电脑了。
@@ -630,7 +646,7 @@ brew cask install java8
 
 - 在GUI环境下，由于无法在执行前无法启动Shell来设置`JAVA_HOME`，因此我使用了一个软件来设置`JAVA_HOME`环境变量，[EnvPane](https://github.com/hschmidt/EnvPane)。安装方法和设置方法请参考网站。
 
-- 网上有很多文章推荐使用[jEnv](https://github.com/gcuisinier/jenv)来管理和切换Java版本，且jEnv 也可以用brew安装，但我不推荐使用。理由如下：
+- 网上有很多文章推荐使用[jEnv](https://github.com/gcuisinier/jenv)来管理和切换Java版本，且jEnv也可以用brew安装，但我不推荐使用。理由如下：
 
   - 需要手动把`eval "$(jenv init -)"`加入profile，没有Oh My Zsh插件。
 
@@ -693,20 +709,20 @@ JetBrains全家桶是指[JetBrains公司](https://www.jetbrains.com/)开发的�
 
 - 在JetBrains Toolbox中安装JetBrains全家桶的其他IDE工具，主要可安装IDE工具包括：
 
-	| 工具名称 | 主要开发语言 | 主要开发目标 | 收费/免费 | 推荐指数 | 
-	| --- | --- | --- | --- | --- |
-	| Intellij IDEA Community | Java/Scala/Groovy等 | Java应用/Java服务器/Web应用/Android应用 | 免费 | ***** |
-	| Intellij IDEA Ultimate | Java/Scala/Groovy等 | Java应用/Java服务器/Web应用/Android应用 | 收费 | *** |
-	| PhpStorm | PHP | PHP服务器/Web应用 | 收费 | **** |
-	| WebStorm | HTML/Javascript | Web应用 | 收费 | **** |
-	| PyCharm Community | Python | Python应用/Web应用 | 免费 | **** |
-	| PyCharm Professional | Python | Python应用/Web应用 | 收费 | **** |
-	| RubyMine | Ruby | Ruby应用/Web应用 | 收费 | *** |
-	| GoLand | Go | Go应用/Web应用 | 收费 | **** |
-	| CLion | C/C++ | C/C++应用 | 收费 | *** |
-	| AppCode | Object C/Swift | IOS应用 | 收费 | *** |
-	| DataGrip | SQL | 数据库应用 | 收费 | *** |
-	
+  | 工具名称 | 主要开发语言 | 主要开发目标 | 收费/免费 | 推荐指数 | 
+  | --- | --- | --- | --- | --- |
+  | Intellij IDEA Community | Java/Scala/Groovy等 | Java应用/Java服务器/Web应用/Android应用 | 免费 | ***** |
+  | Intellij IDEA Ultimate | Java/Scala/Groovy等 | Java应用/Java服务器/Web应用/Android应用 | 收费 | *** |
+  | PhpStorm | PHP | PHP服务器/Web应用 | 收费 | **** |
+  | WebStorm | HTML/Javascript | Web应用 | 收费 | **** |
+  | PyCharm Community | Python | Python应用/Web应用 | 免费 | **** |
+  | PyCharm Professional | Python | Python应用/Web应用 | 收费 | **** |
+  | RubyMine | Ruby | Ruby应用/Web应用 | 收费 | *** |
+  | GoLand | Go | Go应用/Web应用 | 收费 | **** |
+  | CLion | C/C++ | C/C++应用 | 收费 | *** |
+  | AppCode | Object C/Swift | IOS应用 | 收费 | *** |
+  | DataGrip | SQL | 数据库应用 | 收费 | *** |
+  
 - JetBrains全家桶中收费IDE工具的激活方法：
 
   启动对应的IDE工具，如：PhpStorm，在激活界面中选择`License Server`，并在License server address的输入框中输入：`http://47.94.156.248:10001`，点击`Activate`按钮。
@@ -725,40 +741,40 @@ JetBrains全家桶是指[JetBrains公司](https://www.jetbrains.com/)开发的�
 
 - JetBrains全家桶有几套内建的快捷键方案（Keymap）。其中适用于Mac的有`Mac OS X`和`Mac OS X 10.5+`两种。区别是:
 
-	- `Mac OS X`方案和其他平台上的快捷键类似，
-	- `Mac OS X 10.5+`更加符合Mac常用的快捷键。
+  - `Mac OS X`方案和其他平台上的快捷键类似，
+  - `Mac OS X 10.5+`更加符合Mac常用的快捷键。
 
-	一个团队使用不同的快捷键会严重影响效率，建议统一快捷键方案。我建议使用`Mac OS X`方案，因为与Windows平台上的快捷键类似。
-	
+  一个团队使用不同的快捷键会严重影响效率，建议统一快捷键方案。我建议使用`Mac OS X`方案，因为与Windows平台上的快捷键类似。
+  
 - 	JetBrains全家桶的强大功能，还表现在其强大和丰富的插件库。通过安装不同的插件，基本上可以实现全开发语言的编程。我安装的插件列表如下：
 
-	| 插件名称 | 插件介绍 | 官网地址 | 
-	| --- | --- | --- |
-	| .ignore |	各类版本控制忽略文件生成工具 | <https://github.com/hsz/idea-gitignore> |
-	| ADB Idea | Android应用开发辅助工具 | <https://github.com/pbreault/adb-idea> |
-	| Alibaba Java Coding Guidelines | 阿里巴巴出的代码规范检查插件 | <https://github.com/alibaba/p3c> |\
-	| BashSupport | Bash语法支持 | <https://github.com/jansorg/BashSupport> |
-	| CheckStyle-IDEA | 代码规范检查 | <https://github.com/jshiell/checkstyle-idea/> |
-	| Dash | Dash搜索工具| <https://github.com/gdelmas/IntelliJDashPlugin> |
-	| Database Navigator | 数据库工具 | <http://www.jetbrains.net/confluence/display/CONTEST/Database+Navigator> |
-	| Docker integration | Docker管理工具 | <https://plugins.jetbrains.com/plugin/7724-docker-integration> |
-	| Erlang | Erlang语言支持 | <http://ignatov.github.com/intellij-erlang> |
-	| FindBugs-IDEA | 潜在Bug检查 | <http://andrepdo.github.io/findbugs-idea> |
-	| Gitee	| 开源中国码云插件 | <https://gitee.com/oschina/intellij-gitosc> |
-	| Grep Console	| 自定义设置控制台输出颜色 | <https://github.com/krasa/GrepConsole> |
-	| GsonFormat | 把JSON字符串直接实例化成类 | <https://github.com/zzz40500/GsonFormat> |
-	| JRebel Plugin | 代码热部署 | <https://zeroturnaround.com/software/jrebel/> |
-	| Key Promoter X | 快捷键提示 | <https://github.com/halirutan/IntelliJ-Key-Promoter-X> |
-	| Lombok Plugin |	Lombok注解框架插件 | <https://github.com/mplushnikov/lombok-intellij-plugin> |
-	| Markdown Navigator	| Markdown编辑器 | <http://github.com/vsch/idea-multimarkdown> |
-	| Maven Helper | Maven辅助插件 | <https://github.com/krasa/MavenHelper> |
-	| OpenInTerminal | 任意位置打开终端 | <https://github.com/luktom/OpenInTerminal> |
-	| Protobuf Support | Protobuf语言支持 | <https://github.com/protostuff/protobuf-jetbrains-plugin> |
-	| Scala | Scala语言支持 | <http://www.jetbrains.net/confluence/display/SCA/Scala+Plugin+for+IntelliJ+IDEA> |
-	| String Manipulation | 字符串驼峰式/下划线命名转换工具  | <https://github.com/krasa/StringManipulation> |
-| Swagger Codegen | Swagger代码生成器| <https://github.com/jimschubert/intellij-swagger-codegen> | 
-| Swagger Plugin | Swagger语法支持| <https://github.com/zalando/intellij-swagger> |
-| Translation | 翻译插件 | <https://github.com/YiiGuxing/TranslationPlugin> |
+  | 插件名称 | 插件介绍 | 官网地址 | 
+  | --- | --- | --- |
+  | .ignore |	各类版本控制忽略文件生成工具 | <https://github.com/hsz/idea-gitignore> |
+  | ADB Idea | Android应用开发辅助工具 | <https://github.com/pbreault/adb-idea> |
+  | Alibaba Java Coding Guidelines | 阿里巴巴出的代码规范检查插件 | <https://github.com/alibaba/p3c> |
+  | BashSupport | Bash语法支持 | <https://github.com/jansorg/BashSupport> |
+  | CheckStyle-IDEA | 代码规范检查 | <https://github.com/jshiell/checkstyle-idea/> |
+  | Dash | Dash搜索工具| <https://github.com/gdelmas/IntelliJDashPlugin> |
+  | Database Navigator | 数据库工具 | <http://www.jetbrains.net/confluence/display/CONTEST/Database+Navigator> |
+  | Docker integration | Docker管理工具 | <https://plugins.jetbrains.com/plugin/7724-docker-integration> |
+  | Erlang | Erlang语言支持 | <http://ignatov.github.com/intellij-erlang> |
+  | FindBugs-IDEA | 潜在Bug检查 | <http://andrepdo.github.io/findbugs-idea> |
+  | Gitee	| 开源中国码云插件 | <https://gitee.com/oschina/intellij-gitosc> |
+  | Grep Console	| 自定义设置控制台输出颜色 | <https://github.com/krasa/GrepConsole> |
+  | GsonFormat | 把JSON字符串直接实例化成类 | <https://github.com/zzz40500/GsonFormat> |
+  | JRebel Plugin | 代码热部署 | <https://zeroturnaround.com/software/jrebel/> |
+  | Key Promoter X | 快捷键提示 | <https://github.com/halirutan/IntelliJ-Key-Promoter-X> |
+  | Lombok Plugin |	Lombok注解框架插件 | <https://github.com/mplushnikov/lombok-intellij-plugin> |
+  | Markdown Navigator	| Markdown编辑器 | <http://github.com/vsch/idea-multimarkdown> |
+  | Maven Helper | Maven辅助插件 | <https://github.com/krasa/MavenHelper> |
+  | OpenInTerminal | 任意位置打开终端 | <https://github.com/luktom/OpenInTerminal> |
+  | Protobuf Support | Protobuf语言支持 | <https://github.com/protostuff/protobuf-jetbrains-plugin> |
+  | Scala | Scala语言支持 | <http://www.jetbrains.net/confluence/display/SCA/Scala+Plugin+for+IntelliJ+IDEA> |
+  | String Manipulation | 字符串驼峰式/下划线命名转换工具  | <https://github.com/krasa/StringManipulation> |
+  | Swagger Codegen | Swagger代码生成器| <https://github.com/jimschubert/intellij-swagger-codegen> | 
+  | Swagger Plugin | Swagger语法支持| <https://github.com/zalando/intellij-swagger> |
+  | Translation | 翻译插件 | <https://github.com/YiiGuxing/TranslationPlugin> |
 
 ### Visual Studio Code
 
@@ -863,7 +879,7 @@ brew cask install studio-3t
 
 ***安装方法：***
 
-- FastoRedis号称是开源的，但必须订阅其服务才能下载安装包。目前只有之前我下载的v1.8.6版本Mac平台的安装包，大家可以从本文结尾处下载该版本。
+- FastoRedis号称是开源的，但必须订阅其服务才能下载安装包。目前只有之前我下载的v1.8.6版本Mac平台的安装包，大家可以从本文结尾处的[分享链接](#5-分享链接)下载该版本。
 
 - 出品FastoRedis的公司还出品了[FastoNoSQL](https://www.fastonosql.com/)，是一款支持包含Redis在内多个NoSQL数据库的工具。FastoNoSQL号称是开源的，但必须订阅其服务才能下载安装包。而其Github上的[源码](https://github.com/fastogt/fastonosql)，由于缺少私有的子模块而无法编译。目前FastoNoSQL其实是伪开源，但是值得随时关注其动向。
 
