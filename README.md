@@ -4,24 +4,24 @@
 
 本文是以['强迫症的Mac设置指南'](https://github.com/macdao/ocds-guide-to-setting-up-mac)的基础上修改补充而来，把我个人使用Mac的经验分享出来。我认为“一个高效的Mac工作环境”有以下几个特点：
 
-- 自动化
+- ***自动化***
 
   自动化可以大大简化操作，提高效率。
 
   举个例子：浏览器搜索内容，需要执行1)鼠标选择文字，2)拷贝内容到剪贴板，3)打开浏览器或切换到浏览器，4)粘贴拷贝的内容，5)按下回车键，总共5步操作。而利用[PopClip](#PopClip)，只需要1)鼠标选择文字，2)鼠标双击文字，3)在弹出的浮动窗点击搜索图标，总共3步操作即可完成。
 
-- 一致
-
+- ***一致***
   我经常会遇到使用不同的开发工具或编辑器，快捷键和操作、命令不同的问题。我强烈建议，至少在一个团队中，大家尽量使用相同的开发工具、相同的编辑器、相同的快捷键、相同的命令等环境。
 
-- 够用
-
+- ***够用***
   够用就好，如果系统本身已经满足了我的需求，我不会再使用第三方工具。
 
-- 效率
-
+- ***效率***
   效率，一切都是为了效率。
 
+- ***强烈推荐***
+  我个人强烈推荐以下神器级的工具：[Homebrew](#homebrew)、[Homebrew Cask](#homebrew-cask)、[iTerm2](#iterm2)、[Alfred](#alfred)、
+[PopClip](#popclip)、[Path Finder](#path-finder)、[ShadowsocksX](#shadowsocksx)、[JetBrains全家桶](#jetbrains全家桶)、[Visual Studio Code](#visual-studio-code)、[Dash](#dash)、[Charles](#charles)、、、
 本文对于第三方应用如何安装和使用只有最简单的介绍，具体还请参考官方网站和相关文档。另外，欢迎大家通过码云的`Issues`或者`Pull Requests`方式来分享你的经验。期待你的反馈。
 
 ## 目录
@@ -30,7 +30,7 @@
 
    - [功能键](#功能键)
    - [键盘控制](#键盘控制)
-   - [Spotlight和输入法快捷键](#spotlight和输入法快捷键)
+   - [Spotlight/输入法快捷键](#spotlight输入法快捷键)
    - [其他快捷键](#其他快捷键)
    - [设置Trackpad轻点来点按](#设置trackpad轻点来点按)
    - [语音功能](#语音功能)
@@ -52,6 +52,7 @@
    - [Path Finder](#path-finder)
    - [SecureCRT和SecureFX](#securecrt和securefx)
    - [ShadowsocksX](#shadowsocksx)
+   - [ZeroTier](#zerotier)
    - [Moom](#moom)
    - [CheatSheet](#cheatsheet)
    - [Stow和dotfiles](#stow和dotfiles)
@@ -63,6 +64,20 @@
    - [Visual Studio Code](#visual-studio-code)
    - [SmartGit](#smartgit)
    - [微信开发者工具](#微信开发者工具)
+   - [Navicat Premium](#navicat-premium)
+   - [Studio 3T](#studio-3t)
+   - [FastoRedis](#fastoredis)
+   - [DbSchema](#dbschema)
+
+4. [开发辅助](#4-开发辅助)
+   - [Dash](#dash)
+   - [Charles](#charles)
+   - [Swagger](#swagger)
+   - [Paw](#paw)
+   - [IBM API Connect](#ibm-api-connect)
+   - [Regex101](#regex101)
+
+5. [分享链接](#5-分享链接)
 
 ## 1. 操作系统设置
 
@@ -92,7 +107,7 @@
 
 除了`所有控制`这个方法，你还可以用`Cmd+⌫`来选择`Don't Save`。`Cmd+⌫`的作用是在包含“删除”或“不存储”按钮的对话框中选择“删除”或“不存储”。
 
-### Spotlight和输入法快捷键
+### Spotlight/输入法快捷键
 
 Spotlight的快捷键是`Cmd+Space`，切换输入法的快捷键是`Ctrl+Space`。这个设置有以下的问题：
 
@@ -387,7 +402,7 @@ zsh的配置主要集中在用户当前目录的`.zshrc`文件里，即`~/.zshrc
 
 ***安装方法：***
 
-- 此工具是收费软件，大家可以从本文结尾处下载破解版本，也可以使用其限制部分功能的免费版。
+- 此工具是收费软件，大家可以从本文结尾处的[分享链接](#5-分享链接)下载破解版本，也可以使用其限制部分功能的免费版。
 
 ***使用说明：***
 
@@ -409,7 +424,7 @@ zsh的配置主要集中在用户当前目录的`.zshrc`文件里，即`~/.zshrc
 
 ***安装方法：***
 
-- 此工具是收费软件，大家可以从本文结尾处下载破解版本。
+- 此工具是收费软件，大家可以从本文结尾处的[分享链接](#5-分享链接)下载破解版本。
 
 ***使用说明：***
 
@@ -437,7 +452,7 @@ zsh的配置主要集中在用户当前目录的`.zshrc`文件里，即`~/.zshrc
 
 ***安装方法：***
 
-- 此工具是收费软件，大家可以从本文结尾处下载破解版本。
+- 此工具是收费软件，大家可以从本文结尾处的[分享链接](#5-分享链接)下载破解版本。
 
 ***使用说明：***
 
@@ -462,7 +477,7 @@ zsh的配置主要集中在用户当前目录的`.zshrc`文件里，即`~/.zshrc
 
 ***安装方法：***
 
- - 此工具是收费软件，大家可以从本文结尾处下载破解版本。
+ - 此工具是收费软件，大家可以从本文结尾处的[分享链接](#5-分享链接)下载破解版本。
 
 ### ShadowsocksX
 
@@ -499,7 +514,7 @@ brew cask install shadowsocksx-ng
   "method" : "rc4-md5",
   ```
 
-  - 台湾服务器：
+  - 香港阿里云服务器：
 
   ```
   "server" : "47.89.41.191",
@@ -508,6 +523,30 @@ brew cask install shadowsocksx-ng
   "method" : "aes-256-cfb",
   ```
 
+### ZeroTier
+
+[ZeroTier](https://www.zerotier.com/)是一款多平台的内网穿透工具。ZeroTier非常简单易用，能实现虚拟局域网的组建，让你可以在外网也能连回家中、学校、办公室的电脑获取资料和数据。
+
+ZeroTier与其他内网穿透工具，如：[n2n](https://github.com/ntop/n2n)、[ngrok](https://ngrok.com/)、[frp](https://github.com/fatedier/frp)等的优势如下：
+
+  - 配置与使用都非常简单，堪称「无配置，零基础」，小白也能用。
+  - 支持非常多的平台，包括：Windows、MacOS、Linux桌面平台，iOS、Android手机平台，以及QNAP、Synology、Western Digital等NAS平台，还支持OpenWRT/LEDE路由器平台。
+  - ZeroTier通过全球的多台服务器中转数据，实测速度比n2n要快。另外，也可以通过自建中转节点的方式，加快速度。
+  - ZeroTier的可以免费连接100台设备（包括服务器、电脑、手机和路由器），一般情况下是足够的。实在不够，可以多申请几个免费账号。
+
+***安装方法：***
+
+```sh
+brew cask install zerotier-one
+```
+
+***使用说明：***
+
+- ZeroTier的使用，请参考[此文](https://www.appinn.com/zerotier-one/)，或访问[官网](https://www.zerotier.com/download.shtml)
+
+- 网上有人反应ZeroTier的中转服务器在高峰时段会断网（目前我没遇到过），解决的办法是自建中转服务器，官方的叫法是moon。具体方法请参考[此文](http://www.lucktu.com/archives/766.html)或[官方文档](https://www.zerotier.com/manual.shtml#4_4)。
+
+- 根据ZeroTier的原理，理论上也可以通过ZeroTier的节点实现科学上网的功能，但具体方法尚未尝试。
 
 ### Moom
 
@@ -515,7 +554,7 @@ brew cask install shadowsocksx-ng
 
 ***安装方法：***
 
-- 此工具是收费软件，大家可以从本文结尾处下载破解版本。
+- 此工具是收费软件，大家可以从本文结尾处的[分享链接](#5-分享链接)下载破解版本。
 
 ***使用说明：***
 
@@ -543,7 +582,7 @@ brew cask install cheatsheet
 brew install stow
 ```
 
-安装了stow之后，我们可以开始symlink自己的dotfiles了。完整使用stow和 dotfiles的流程可以参考<https://github.com/jcouyang/dotfiles>。
+安装了stow之后，我们可以开始symlink自己的dotfiles了。完整使用stow和dotfiles的流程可以参考我的dotfiles<https://gitee.com/gebing/dotfiles>。
 
 当你的dotfiles都妥妥的symlink到`~/dotfiles`后，push到github上就再也不怕换电脑了。
 
@@ -577,6 +616,7 @@ brew cask install java8
   ```sh
   function jdk() {
       export JAVA_HOME=`/usr/libexec/java_home -v $@`
+      echo "JAVA_HOME switched to '$JAVA_HOME'."
   }
   ```
   
@@ -585,6 +625,7 @@ brew cask install java8
   ```sh
   jdk 1.8
   jdk 9
+  jdk 10
   ```
 
 - 在GUI环境下，由于无法在执行前无法启动Shell来设置`JAVA_HOME`，因此我使用了一个软件来设置`JAVA_HOME`环境变量，[EnvPane](https://github.com/hschmidt/EnvPane)。安装方法和设置方法请参考网站。
@@ -666,13 +707,17 @@ JetBrains全家桶是指[JetBrains公司](https://www.jetbrains.com/)开发的�
 	| AppCode | Object C/Swift | IOS应用 | 收费 | *** |
 	| DataGrip | SQL | 数据库应用 | 收费 | *** |
 	
-- 收费的IDE工具需要破解，目前主要的破解方式有以下3种：
+- JetBrains全家桶中收费IDE工具的激活方法：
 
-	- 激活服务器。由于最新版本的JetBrains全家桶屏蔽了本机上的激活服务器和网上一些公开的激活服务器，目前只能使用我们自己搭建的私用激活服务器。
+  启动对应的IDE工具，如：PhpStorm，在激活界面中选择`License Server`，并在License server address的输入框中输入：`http://47.94.156.248:10001`，点击`Activate`按钮。
 
-	- 破解激活。
+  PS：收费的IDE工具目前主要的破解方式有以下3种：
+  
+  - 激活服务器。由于最新版本的JetBrains全家桶屏蔽了本机上的激活服务器和网上一些公开的激活服务器，目前只能使用我们自己搭建的私用激活服务器。
+  
+  - 破解激活。
 
-	- 网上搜寻可用的激活码。
+  - 网上搜寻可用的激活码。
 
 ***使用说明：***
 
@@ -727,7 +772,7 @@ brew cask install visual-studio-code
 
 ***使用说明：***
 
-- Visual Studio Code的使用方法可以参考[中文手册](https://jeasonstudio.gitbooks.io/vscode-cn-doc/)或[使用技巧](https://zhuanlan.zhihu.com/p/22880087)。
+- Visual Studio Code的使用方法可以参考[中文手册](https://jeasonstudio.gitbooks.io/vscode-cn-doc/)或[使用技巧](https://zhuanlan.zhihu.com/p/22880087)。
 
 
 ### SmartGit
@@ -754,7 +799,7 @@ PS：
     brew cask install smartsvn
     ```
 
-  - 此工具是收费软件，大家可以从本文结尾处下载破解的注册码生成器。
+  - 此工具是收费软件，大家可以从本文结尾处的[分享链接](#5-分享链接)下载注册码生成器。
 
 - 网上有人推荐使用[SourceTree](https://www.sourcetreeapp.com/)。SourceTree也是一款不错的Git版本管理的图形化客户端，以我个人短暂的使用经验来看，其自动化处理冲突的功能上比SmartGit稍弱。SourceTree的主要优点在于：（1）汉化；（2）免费使用。
 
@@ -782,8 +827,7 @@ brew cask install wechatwebdevtools
 
 ***安装方法：***
 
-- 此工具是收费软件，大家可以从本文结尾处下载破解版本。
-
+- 此工具是收费软件，大家可以从本文结尾处的[分享链接](#5-分享链接)下载破解版本。
 
 ### Studio 3T
 
@@ -793,7 +837,7 @@ brew cask install wechatwebdevtools
 
 - 方便的数据编辑
 
-- 表格/树状/Json数据的展现方式
+- 表格/树状/Json数据的展现方式
 
 - SQL查询/导入/导出
 
@@ -815,26 +859,212 @@ brew cask install studio-3t
 
 ### FastoRedis
 
-[FastoRedis](hhttps://www.fastoredis.com/)是一款优秀的跨平台Redis数据库管理工具。相比其他Redis工具（如：[Redis Desktop Manager](https://redisdesktop.com/)、[Medis](https://github.com/luin/medis)等），其最大的特定是支持Redis Cluster和Redis Sentinel。
+[FastoRedis](hhttps://www.fastoredis.com/)是一款优秀的跨平台Redis数据库管理工具。相比其他Redis工具（如：[Redis Desktop Manager](https://redisdesktop.com/)、[Medis](https://github.com/luin/medis)等），其最大的特定是支持Redis Cluster和Redis Sentinel。
 
 ***安装方法：***
 
 - FastoRedis号称是开源的，但必须订阅其服务才能下载安装包。目前只有之前我下载的v1.8.6版本Mac平台的安装包，大家可以从本文结尾处下载该版本。
 
-- 出品FastoRedis的公司还出品了[FastoNoSQL](https://www.fastonosql.com/)，是一款支持包含Redis在内多个NoSQL数据库的工具。FastoNoSQL号称是开源的，但必须订阅其服务才能下载安装包。而其Github上的[源码](https://github.com/fastogt/fastonosql)，由于缺少私有的子模块而无法编译。目前FastoNoSQL其实是伪开源，但是值得随时关注其动向。
+- 出品FastoRedis的公司还出品了[FastoNoSQL](https://www.fastonosql.com/)，是一款支持包含Redis在内多个NoSQL数据库的工具。FastoNoSQL号称是开源的，但必须订阅其服务才能下载安装包。而其Github上的[源码](https://github.com/fastogt/fastonosql)，由于缺少私有的子模块而无法编译。目前FastoNoSQL其实是伪开源，但是值得随时关注其动向。
+
+### DbSchema
+
+[DbSchema](https://www.dbschema.com/)是一款跨平台的数据库设计工具。使用DbSchema可以设计数据库，探索和编辑数据，编写和执行查询，从文件创建报表，加载数据，生成随机数据，打印模式图表或生成文档或Json Schema文件。DbSchema除了可以通过JDBC使用传统SQL数据库，还特别原生支持MongoDB。
+
+***安装方法：***
+
+```sh
+brew cask install dbschema
+```
+
+***使用说明：***
+
+- 此工具是收费软件，大家可以从本文结尾处的[分享链接](#5-分享链接)下载注册码生成器。
 
 ## 4. 开发辅助
 
-### 微信开发者工具
+所谓“工欲善其事必先利其器”，作为一个优秀的程序员，必须掌握相关的辅助工具去快速开发和查找问题。这里就主要介绍相关的开发辅助工具。
 
-[微信开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)是微信出品的微信/小程序开发调试工具。微信开发者工具可以帮助开发者简单和高效地开发和调试微信/小程序，集成了公众号网页调试和小程序调试两种开发模式。
+### Dash
 
+[Dash](https://kapeli.com/)是Mac上的API文档浏览和代码片段管理的神器。Dash自带了丰富的API文档，涉及各种主流的编程语言和框架，包括但不限于:ActionScript，Android，C++，CAppuccino，Cocos2D，Cocos3D，Corona，CSS，Django，Groovy，HTML，Java，JavaFX，JavaScript，jQuery，Kobold2D，Lua，MySQL，Node.js，Man Pages，Perl，PHP，Python，Ruby，Ruby on Rails，Scala，Sparrow，SQLite，Unity 3D，WordPress，XSLT，XUL等等。
+
+***安装方法：***
+
+- 此工具是收费软件，大家可以从本文结尾处的[分享链接](#5-分享链接)下载破解版本。
+
+***使用说明：***
+
+- Dash的使用非常简单，安装完Dash后，进入`Preferrence` -> `Downloads`，查找并选择你需要的API文件，点击下载即可。
+
+- 查找API文档时，既可以在搜索栏在全部下载的文档中搜索关键词，也可以先点击特定的API文档后再输入关键词，在指定的API文档内搜索。
+
+- 进入API详情页面后，也可以按下`Cmd+F`在页面内进行搜索。
+
+### Charles
+
+[Charles](https://www.charlesproxy.com/)是一款跨平台的HTTP代理/反向代理/HTTP跟踪工具。当浏览器或客户端连接Charles的代理或端口转发访问服务器时，Charles可以监控浏览器或客户端发送和接收的所有数据。它允许开发者查看所有连接互联网的HTTP通信，包括：request、response和HTTP headers（包含cookies与caching信息）。其主要功能包括：
+  - 支持HTTP代理和Socks代理。可以作为标准代理服务器。
+  - 支持SSL代理。可以截取分析SSL的请求。
+  - 支持端口转发。可以在非HTTP请求或无法设置代码的场景下使用。
+  - 支持流量控制。可以模拟慢速网络以及等待时间较长的请求。
+  - 支持AJAX调试。可以自动将json或xml数据格式化，方便查看。
+  - 支持AMF调试。可以将Flash Remoting或Flex Remoting信息格式化，方便查看。
+  - 支持重发网络请求，方便后端调试。
+  - 支持修改网络请求参数，支持网络请求的截获并动态修改。
+
+我们在开发过程中，经常会出现前端和后台的工程师在纠缠发送或返回数据错误的问题，这个时候使用Charles可以立刻让问题显现出来。Charles比使用TcpDump、WireShark等抓包工具有以下的优势：
+  - 使用简单，不需要在客户端或服务器安装任何程序，随时使用。
+  - 清晰明了，只显示请求和应答的数据并可以以多种方式展示。
+  - 功能强大，请求和应答的数据可以动态修改。
+
+PS：[Fiddler](https://www.telerik.com/fiddler)跟Charles类似，但功能和方便性不如远远Charles，因此不推荐使用。
+
+***安装方法：***
+
+- 此工具是收费软件，大家可以从本文结尾处的[分享链接](#5-分享链接)下载破解版本。
+
+***使用说明：***
+
+- Charles的使用：<https://www.jianshu.com/p/0fee626ffbb0>
+- 移动应用抓包调试利器Charles：<https://www.jianshu.com/p/68684780c1b0>
+- https://www.telerik.com/fiddler
+
+### Swagger
+
+[Swagger](https://swagger.io/)是目前最受欢迎的REST APIs文档生成工具。Swagger是一个规范和完整的框架，用于生成、描述、调用和可视化REST风格的Web服务。Swagger是由以下的部分组成：
+
+  - [Swagger规范](https://swagger.io/specification/)
+  
+    Swagger规范（即OpenAPI规范）使我们可以用指定的JSON或者YAML文件来描述API定义，包括请求、应答、认证等。我个人建议使用YAML来写，原因是它更简单。
+
+  - [Swagger Editor](https://swagger.io/swagger-editor/)
+
+    Swagger Editor是一个基于浏览器的在线Swagger文档编辑工具。它提供语法高亮、自动完成、即时预览等功能。
+    
+    PS：除此之外，我们还可以通过以下方法生成Swagger文档：
+    
+      - 在其他编辑器或IDE上（如：Visual Studio Code、Intellij IDEA）通过编写Swagger编辑器插件编写Swagger文档。具体可以在[此网址](https://swagger.io/open-source-integrations/)查找相关插件和工具。
+
+      - 通过各种语言版本的、根据注释生成Swagger文档的非官方工具，包括：swagger-springmvc、swagger-php等。具体可以在[此网址](https://swagger.io/open-source-integrations/)查找相关插件和工具。
+
+      - 在第三方API网站或工具上编辑生成API定义后，导出Swagger文档。目前支持导出Swagger文档的API网站包括：
+
+        - [SoSoApi](http://www.sosoapi.com/)
+
+        - [IBM API Connect](https://console.bluemix.net/docs/services/apiconnect/index.html)
+
+        其他一些网站（如：[ShowDoc](https://www.showdoc.cc)、[RAP2](http://rap2.taobao.org/)等，都不支持导出Swagger文档。
+
+  - [Swagger Codegen](https://swagger.io/swagger-codegen/)
+  
+    Swagger Codegen是一个根据Swagger文档内容自动生成相关API接口代码的工具。Swagger Codegen可以生成几乎所有开发语言和开发平台下对应API接口的代码，包括:
+
+    - 客户端: ActionScript, Ada, Apex, Bash, C#, C++, Clojure, Dart, Elixir, Elm, Eiffel, Erlang, Go, Groovy, Haskell, Java (Jersey1.x, Jersey2.x, OkHttp, Retrofit1.x, Retrofit2.x, Feign, RestTemplate, RESTEasy, Vertx, Google API Client Library for Java, Rest-assured), Kotlin, Lua, Node.js (ES5, ES6, AngularJS with Google Closure Compiler annotations) Objective-C, Perl, PHP, PowerShell, Python, R, Ruby, Rust (rust, rust-server), Scala (akka, http4s, swagger-async-httpclient), Swift (2.x, 3.x, 4.x), Typescript (Angular1.x, Angular2.x, Fetch, jQuery, Node)
+
+    - 服务器端: Ada, C#, C++, Erlang, Go, Haskell, Java (MSF4J, Spring, Undertow, JAX-RS: CDI, CXF, Inflector, RestEasy, Play Framework, PKMST), Kotlin, PHP (Lumen, Slim, Silex, Symfony, Zend Expressive), Python (Flask), NodeJS, Ruby (Sinatra, Rails5), Rust (rust-server), Scala (Finch, Lagom, Scalatra)
+
+    - API文档: HTML, Confluence Wiki
+
+    - 配置文件: Apache2
+
+    - 其他: JMeter
+
+    PS：除此之外，很多编辑器或IDE也都提供Swagger Codegen的非官方插件，实现在编辑器或IDE中生成API接口代码。   
+
+  - [Swagger UI](https://swagger.io/swagger-ui/)
+  
+    Swagger UI是一个根据Swagger文档内容展示和测试API接口的工具。Swagger UI可以给前端展示相关的API文档，并像使用Postman以及Curl命令一样，通过Web界面进行接口测试。Swagger UI是一个静态依赖的网站，可以很方便的集成到现有的、使用不同语言开发（如Java、Php等）的网站中。
+
+  - [Swagger Inspector](https://swagger.io/swagger-inspector/)
+
+    Swagger Inspector是一个根据Swagger文档内容在线测试API接口的工具。除了可以测试Swagger规范的接口外，Swagger Inspector还可以测试标准HTTP、XML、WDSL的API。另外，Swagger Inspector还可以根据现有接口反向生成Swagger文档。
+
+具体Swagger的生态图，请见下图：
+
+![swagger-ecosystem](resource/swagger-ecosystem.png)
+
+### Paw
+
+[Paw](https://paw.cloud/)是一款Mac上HTTP客户端模拟测试工具，可以让Web开发者设置各种请求Header和参数，模拟发送HTTP请求，测试响应数据，支持OAuth、HTTP Basic Auth、Cookies等，这对于开发Web服务和REST接口的应用很有帮助，非常实用的一款Web开发辅助工具。
+
+***安装方法：***
+
+- 此工具是收费软件，大家可以从本文结尾处的[分享链接](#5-分享链接)下载破解版本。
+
+***使用说明：***
+
+- PAW提供一个全功能的HTTP Client，能够模拟全部基于HTTP的API请求，并支持几乎所有数据格式（比如：Text、File、JSON、XML等）。PAW的HTTP Client的强大的功能包括：能够根据自定义规则动态生成请求数据、数据生成的Extension、及根据服务器环境参数切换请求数据。
+
+- PAW提供了强大的API管理功能，能够导入Swagger（即Open API）、BluePrint、WSDL等API定义文档，查看API接口定义，导出现有API定义到API文档。
+
+- PAW另一个强大的功能是其代码生成的功能，通过PAW的官方和第三方Extension，PAW可以根据API接口定义生成各种开发语言相应的API请求代码，包括：cURL、HTTP、Swift、Objective-C、Python、JavaScript、 Node、Ruby、PHP cURL、Java、Go等。
+
+- PAW还提供了团队开发的功能，包括：工程同步、项目分支等。
+
+### IBM API Connect
+
+[IBM API Connect](https://console.bluemix.net/docs/services/apiconnect/index.html)是IBM提供的多平台上一个免费API接口管理工具。IBM API Connect可以定义/编辑API接口、定义/编辑实体模型和对应的数据源、自动生成实体模型对应的API接口、模拟和测试API接口。
+
+***安装方法：***
+
+IBM API Connect是一个离线工具（但需要BM BlueMix的账号和登录验证），运行在你的本机，通过命令行和浏览器来操作。安装方法请参考IBM的[相关文档](https://console.bluemix.net/docs/services/apiconnect/creating_apis.html)。安装步骤如下：
+
+  1. 申请并创建[IBM BlueMix](https://console.bluemix.net/)的免费账号。
+
+  1. 安装node.js。
+
+      ```sh
+      brew install node
+      ```
+
+  1. 安装API Connect。
+
+      ```sh
+      npm install -g apiconnect
+      ```
+
+安装完成后，你可以执行`apic`显示API Connect的命令行帮助信息，可以执行`apic edit`启动API Designer界面，也可以执行`apic loopback`创建API工程。
+
+***使用说明：***
+
+- API Connect可以通过命令行和浏览器两种方式操作，具体使用请参考[IBM网站](https://console.bluemix.net/docs/services/apiconnect/apic_overview.html)和[入门教程](https://console.bluemix.net/docs/services/apiconnect/tutorials/tut_create_api_node.html)。
+
+- API Connect使用了node.js的API框架[LoopBack](https://loopback.io/)作为其API网关和API服务端。我们可以修改LoopBack以改变其API网关和API服务端的行为。具体请参考LoopBack官方网站。
+
+### Regex101
+
+[Regex101](https://regex101.com/)是一个在线正则表达式的开发和测试工具。网上在线或离线的正则表达式工具很多，但Regex101无疑是其中功能最全和最强大的。由于Regex101必须翻墙才能访问，因此我找到了一个[离线和汉化版Regex101](https://github.com/Zjmainstay/RegexTesterForMac)。
+
+***安装方法：***
+
+大家可以从本文结尾处的[分享链接](#5-分享链接)下载我修改后的版本，也可以从[GitHub](https://raw.githubusercontent.com/Zjmainstay/RegexTesterForMac/master/dist/Regex101.zip)上下载原版。
+
+***使用说明：***
+
+- 用户可以在Regex101中编写、测试、验证正则表达式，支持PHP、Javascript、Python和Golang等语言风格的正则表达式。
+
+- Regex101会自动显示正则表达式的解释、测试的匹配/替换的过程和结果。同时Regex101提供正则表达式的快速参考和解释，便于大家编写。
+
+- Regex101还提供了正则表达式对应代码的自动生成的功能，可以生成PHP、Javascript、Python、C#、Java、Ruby、Rust、Golang、Perl等多种语言的代码。
+
+- Regex101还提供了代码库的功能，可以搜索网上共享的正则表达式。
+
+## 5. 分享链接
+
+前面推荐的软件有些是收费软件，需要破解。为了方便大家下载，这里给出我个人网盘上的共享链接，大家可以从中寻找并下载相应的破解软件。
+<http://evcloud.tunnel.ev-cloud.cn:8080/file/sharing/QPB7hw0kL>
+
+PS：
+- 此共享链接中的破解软件会不定期更新，保证提供最新版本的破解软件。请大家下载后，仔细阅读相关的破解说明来操作。共享链接中目录，是针对不同软件的破解说明和汉化资源。
+
+- 如果共享链接内的软件不是最新版的，表示当前版本的破解可以应用到最新版本。大家可以从软件官网上下载最新版本软件，再使用旧版中的破解文件破解即可。大家也可以直接到相应软件的目录中，执行下载相应的破解补丁。
 
 ## 参考资料
 
+- [高效MacBook工作环境配置](http://blog.csdn.net/zen99t/article/details/54754896)
+- [程序员如何优雅地使用Mac？](http://www.zhihu.com/question/20873070)
+- [装点你的Dock：外观篇](http://sspai.com/33493)
 - [Hacker's Guide to Setting up Your Mac](http://lapwinglabs.com/blog/hacker-guide-to-setting-up-your-mac)
 - [Setting up a new (OS X) development machine](https://mattstauffer.co/blog/setting-up-a-new-os-x-development-machine-part-1-core-files-and-custom-shell)
-- [高效 MacBook 工作环境配置](http://www.xialeizhou.com/?p=71)
-- [程序员如何优雅地使用 Mac？](http://www.zhihu.com/question/20873070)
-- [装点你的 Dock：外观篇](http://sspai.com/33493)
 
