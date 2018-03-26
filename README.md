@@ -21,7 +21,7 @@
 
 - ***强烈推荐***
   我个人强烈推荐以下神器级的工具：[Homebrew](#homebrew)、[Homebrew Cask](#homebrew-cask)、[iTerm2](#iterm2)、[Alfred](#alfred)、
-[PopClip](#popclip)、[Path Finder](#path-finder)、[ShadowsocksX](#shadowsocksx)、[JetBrains全家桶](#jetbrains全家桶)、[Visual Studio Code](#visual-studio-code)、[Dash](#dash)、[Charles](#charles)、、、
+[PopClip](#popclip)、[Path Finder](#path-finder)、[ShadowsocksX](#shadowsocksx)、[JetBrains全家桶](#jetbrains全家桶)、[Visual Studio Code](#visual-studio-code)、[Dash](#dash)、[Charles](#charles)、[Swagger](#swagger)、[Regex101](#regex101)等。
 本文对于第三方应用如何安装和使用只有最简单的介绍，具体还请参考官方网站和相关文档。另外，欢迎大家通过码云的`Issues`或者`Pull Requests`方式来分享你的经验。期待你的反馈。
 
 ## 目录
