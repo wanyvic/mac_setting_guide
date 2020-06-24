@@ -1070,8 +1070,8 @@ IBM API Connect是一个离线工具（但需要BM BlueMix的账号和登录验�
 
 前面推荐的软件有些是收费软件，需要破解。为了方便大家下载，这里给出我个人网盘上的共享链接，大家可以从中寻找并下载相应的破解软件。
 
-- 链接: <https://pan.baidu.com/s/15s-HhJUFtCbXSjvOFr7Flw> 
-- 提取码: `z6m8`
+<https://odobagg-my.sharepoint.com/:f:/g/personal/gebing_od_obagg_com/Em34rIYBkf5GptUQi2epRjQBqJT96tZJ3JK9eHNbn9rLmg?e=vTuuPy> 
+
 
 PS：
 - 此共享链接中的破解软件会不定期更新，保证提供最新版本的破解软件。请大家下载后，仔细阅读相关的破解说明来操作。共享链接中目录，是针对不同软件的破解说明和汉化资源。
