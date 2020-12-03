@@ -303,7 +303,7 @@ brew cask install iterm2
 
 ***使用说明：***
 
-- 在iTerm2中，除了可以用`Ctrl+E`等快捷键（详见[其他快捷键](#其他快捷键)）之外，还可以使用`Option+B`、`Option+F`等快捷键（具体可以参考[这里](http://ss64.com/bash/syntax-keyboard.html)）。前提是这样设置一下：
+- 在iTerm2中，除了可以用`Ctrl+E`等快捷键（详见[其他快捷键](#其他快捷键)）之外，还可以使用`Option+B`、`Option+F`等快捷键（具体可以参考[这里](http://ss64.com/bash/syntax-keyboard.html)、[中文](https://zhuanlan.zhihu.com/p/34509032)）。前提是这样设置一下：
 
   选择`Iterm`菜单 -> `Preferences` -> `Profiles`，选择你在使用的 Profile（默认是`Default`），在`Keys`标签页中把`Left option (⌥) key acts as`和`Right option (⌥) key acts as`都设置成`+ESC`。
 
@@ -375,6 +375,24 @@ zsh的配置主要集中在用户当前目录的`.zshrc`文件里，即`~/.zshrc
   plugins=(git autojump osx history)
   ```
 
+### zsh-syntax-highlighting && zsh-autosuggestions
+  ```
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+  git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+  source .zshrc
+  ```
+
+### exa
+  ```
+  brew install exa
+  cat >> ~/.zshrc << EOF
+  alias ll="exa -l"
+  alias l="exa"
+  alias ls="exa"
+  alias la="exa -la"
+  alias tree="exa -T"
+  EOF
+  ```
 ### AutoJump
 
 [autojump](https://github.com/wting/autojump)是Mac和Linux上一个命令行工具，它可以使用快捷命令，直接跳转到配置好的或历史的目录，而不用管现在身在何处。
@@ -1070,7 +1088,7 @@ IBM API Connect是一个离线工具（但需要BM BlueMix的账号和登录验�
 
 前面推荐的软件有些是收费软件，需要破解。为了方便大家下载，这里给出我个人网盘上的共享链接，大家可以从中寻找并下载相应的破解软件。
 
-<https://odobagg-my.sharepoint.com/:f:/g/personal/gebing_od_obagg_com/Em34rIYBkf5GptUQi2epRjQBqJT96tZJ3JK9eHNbn9rLmg?e=vTuuPy> 
+<https://pan.baidu.com/s/17MFg_yjhlzazIpcmgFxVqg> 提取码: 342c 
 
 
 PS：
