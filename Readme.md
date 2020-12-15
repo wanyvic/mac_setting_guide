@@ -244,7 +244,7 @@ PS：安装 brew 的时候会自动下载和安装 Apple 的 Command Line Tools�
 ***安装方法：***
 
 ```sh
-brew tap caskroom/cask
+~~brew tap caskroom/cask~~
 ```
 
 ***使用说明：***
