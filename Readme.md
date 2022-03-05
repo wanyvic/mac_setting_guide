@@ -372,7 +372,7 @@ zsh的配置主要集中在用户当前目录的`.zshrc`文件里，即`~/.zshrc
   插件配置也是在`~/.zshrc`里配置，找到`plugins`关键字，你就可以加载自己的插件了。目前我使用的插件配置为：
   
   ```
-  plugins=(git autojump osx history)
+  plugins=(git autojump macos history zsh-autosuggestions zsh-syntax-highlighting)
   ```
 
 ### zsh-syntax-highlighting && zsh-autosuggestions
@@ -449,6 +449,8 @@ zsh的配置主要集中在用户当前目录的`.zshrc`文件里，即`~/.zshrc
   - AlfredWorkflow：<http://www.alfredworkflow.com/>
 
   - 常用Workflow：<https://www.jianshu.com/p/0e78168da7ab>
+ 
+  - 替换Alfred内的Terminal为iTerm <https://github.com/vitorgalvao/custom-alfred-iterm-scripts#copy-the-script>
 
 ### PopClip
 
